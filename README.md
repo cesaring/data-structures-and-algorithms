@@ -1,5 +1,4 @@
-TABLE OF CONTENTS:
-    WhiteboardChallenge1.png    Image of Whiteboard with first approach
-    WhiteboardChallenge2.png    Image of Whiteboard with second approach
-    ReverseArray.java.txt       Text of Java Code for solution.
-    Readme.md                   Readme file
+REVERSE-ARRAY TASK:
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+![Whiteboard 1](WhiteboardChallenge1.png)
+![Whiteboard 2](WhiteboardChallenge2.png)
