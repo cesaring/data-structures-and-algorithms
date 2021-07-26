@@ -1,6 +1,6 @@
 "# data-structures-and-algorithms"
 
-Table of Contents:
+*Table of Contents:*
 
 ![Code Challenge: Reverse-Array ReadMe].(https://github.com/cesaring/data-structures-and-algorithms/blob/reverse-array/README.md)
 
