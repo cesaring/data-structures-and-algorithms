@@ -11,4 +11,44 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test void AnimalShelter_AddACat(){
+        AnimalShelter animalShelterTest = new AnimalShelter();
+        animalShelterTest.enqueue( new Cat());
+        assertTrue(animalShelterTest.animalList.get(0).type.equals("Cat"),"Animal in animalList s/b of type cat");
+    }
+
+    @Test void AnimalShelter_AddADog(){
+        AnimalShelter animalShelterTest = new AnimalShelter();
+        animalShelterTest.enqueue( new Cat());
+        assertTrue(animalShelterTest.animalList.get(0).type.equals("Cat"),"Animal in animalList s/b of type cat");
+    }
+
+    @Test void AnimalShelter_RemoveADog(){
+        AnimalShelter animalShelterTest = new AnimalShelter();
+        animalShelterTest.enqueue( new Dog());
+        animalShelterTest.enqueue( new Cat());
+        animalShelterTest.dequeue("Dog");
+        assertTrue(animalShelterTest.animalList.get(0).type.equals("Cat"),"Animal left in Shelter s/b of type Cat");
+    }
+
+    @Test void AnimalShelter_RemoveACat(){
+        AnimalShelter animalShelterTest = new AnimalShelter();
+        animalShelterTest.enqueue( new Dog());
+        animalShelterTest.enqueue( new Cat());
+        animalShelterTest.dequeue("Cat");
+        assertTrue(animalShelterTest.animalList.get(0).type.equals("Dog"),"Animal left in Shelter s/b of type Dog");
+    }
+
+    @Test void AnimalShelter_RemoveADogNotAvailable(){
+        AnimalShelter animalShelterTest = new AnimalShelter();
+        animalShelterTest.enqueue( new Dog());
+        animalShelterTest.enqueue( new Cat());
+        animalShelterTest.dequeue("Dog");
+        Animal retrievedAnimal = animalShelterTest.dequeue("Dog");
+
+        assertTrue(retrievedAnimal.type.equals("Cat"),"returned animal s/b of type Cat");
+    }
+
+
 }

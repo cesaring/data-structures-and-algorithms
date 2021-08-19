@@ -9,6 +9,26 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        //System.out.println(new App().getGreeting());
+
+        AnimalShelter myShelter = new AnimalShelter();
+
+        myShelter.enqueue( new Cat());
+        myShelter.enqueue( new Dog());
+        myShelter.enqueue( new Cat());
+        myShelter.enqueue( new Dog());
+
+        myShelter.displayAnimalList();
+        System.out.println("Removing first dog");
+        myShelter.dequeue("Dog");
+        myShelter.displayAnimalList();
+        System.out.println("Removing second dog");
+        myShelter.dequeue("Dog");
+        myShelter.displayAnimalList();
+        System.out.println("asking for another Dog, but will remove first cat...");
+        myShelter.dequeue("Dog");
+        myShelter.displayAnimalList();
+
     }
 }
