@@ -19,26 +19,27 @@ public class AnimalShelter {
     public Animal dequeue(String pref) {
         Animal resultAnimal = new Animal();
 
-        //searching for preference
-        for(Animal a:animalList){
-            if (a.type.equals(pref)) {
-                resultAnimal = a;
-                animalList.remove(a);
-                break;
-            }
-        }
-
-        //if preference is not found, select the first item in arrayList
-        if (resultAnimal.type.equals("")) {
+        if (pref.equals("")) {
             resultAnimal = animalList.get(0);
             animalList.remove(animalList.get(0));
+        } else {
+
+            //searching for preference
+            for (Animal a : animalList) {
+                if (a.type.equals(pref)) {
+                    resultAnimal = a;
+                    animalList.remove(a);
+                    break;
+                }
+            }
+            if (resultAnimal.type.equals("")) resultAnimal = null;
+
+            //if preference is not found, select the first item in arrayList
         }
-
         return resultAnimal;
-
     }
 
-    //adds animal to ArrayList
+    //adds animal to ArrayList, this is private and called by the enqueue functions so only Dog/Cat objects allowed.
     private void  addAnimal(Animal a){
         animalList.add(a);
     }
