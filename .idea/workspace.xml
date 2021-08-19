@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82a8174b-d82e-46f0-b4fd-9cf7a6ccfe19" name="Changes" comment="Added comments to the addAnimal function">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="82a8174b-d82e-46f0-b4fd-9cf7a6ccfe19" name="Changes" comment="Changed AnimalShelter dequeue function to align with assignment: &#10;  * return null if preference is not found.&#10;  * if pref=&quot;&quot; then return first animal in shelter.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/codeChallenge12/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/codeChallenge12/AnimalShelter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/codeChallenge12/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/codeChallenge12/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Gradle.AppTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="codeChallenge12.App" />
       <module name="codeChallenge12.app.main" />
@@ -106,6 +105,14 @@
       <option name="presentableId" value="Default" />
       <updated>1629247439966</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changed AnimalShelter dequeue function to align with assignment: &#10;  * return null if preference is not found.&#10;  * if pref=&quot;&quot; then return first animal in shelter.">
+      <created>1629346881831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629346881831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added comments to the addAnimal function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comments to the addAnimal function" />
+    <MESSAGE value="Changed AnimalShelter dequeue function to align with assignment: &#10;  * return null if preference is not found.&#10;  * if pref=&quot;&quot; then return first animal in shelter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed AnimalShelter dequeue function to align with assignment: &#10;  * return null if preference is not found.&#10;  * if pref=&quot;&quot; then return first animal in shelter." />
   </component>
 </project>

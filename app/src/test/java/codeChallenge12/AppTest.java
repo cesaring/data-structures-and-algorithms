@@ -47,7 +47,7 @@ class AppTest {
         animalShelterTest.dequeue("Dog");
         Animal retrievedAnimal = animalShelterTest.dequeue("Dog");
 
-        assertTrue(retrievedAnimal.type.equals("Cat"),"returned animal s/b of type Cat");
+        assertTrue(retrievedAnimal==null,"returned animal s/b of type null");
     }
 
 
