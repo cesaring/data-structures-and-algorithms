@@ -19,3 +19,7 @@ If pref is not "dog" or "cat" then return null.
 *Stretch Goal*
 
 If a cat or dog isn’t preferred, return whichever animal has been waiting in the shelter the longest.
+
+Repo:
+[Stack-Queue-Animal-Shelter](https://github.com/cesaring/data-structures-and-algorithms/tree/stack-queue-animal-shelter)
+
